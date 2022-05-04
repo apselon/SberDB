@@ -39,7 +39,8 @@ Sphinx позволяет генерировать индекс, из котор
 
 * searchd — сервис Sphinx, который осуществляет поиск при помощи Full-text Index.
 Эти компоненты взаимодействуют так как показано на схеме:
-![](Images/index_update. png)
+
+![](Images/index_update.png)
 
 ### Пример работы
 Сначала необходимо задать Data Source в файле /etc/sphinx/sphinx. conf:
@@ -63,7 +64,8 @@ source src1
 
 ```
 
-Создадим базу данных для примера![](Images/make_database. png)
+Создадим базу данных для примера
+![](Images/make_database.png)
 
 Затем создим индекс
 ```
@@ -82,7 +84,8 @@ total 3 reads, 0.000 sec, 0.1 kb/call avg, 0.0 msec/call avg
 total 9 writes, 0.000 sec, 0.1 kb/call avg, 0.0 msec/call avg
 ```
 
-И запустим сервис поиска![](Images/start_searchd. png)
+И запустим сервис поиска
+![](Images/start_searchd.png)
 ```
 $ sphinx-searchd —nodetach
 
